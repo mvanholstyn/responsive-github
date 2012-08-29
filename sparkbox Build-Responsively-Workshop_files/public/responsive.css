@@ -1,0 +1,43 @@
+html, body {
+  min-width: 0;
+}
+
+body #wrapper #header .container {
+  width: auto;
+  max-width: 920px;
+}
+
+body #wrapper .site .container {
+  width: auto;
+  max-width: 920px;
+}
+
+@media (max-width:800px) {
+  body #wrapper #header .container .topsearch .top-nav li:not(.explore) {
+    display: none;
+  }
+}
+
+@media (max-width:675px) {
+  body #wrapper #header .container #userbox #user a.name {
+    display: none;
+  }
+  body #wrapper #header .container #user-links {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width:575px) {
+  body #wrapper #header .container .topsearch {
+    border-left: none;
+    margin-left: 0;
+    box-shadow: none;
+  }
+  body #wrapper #header .container .topsearch form .search {
+    display: none;
+  }
+  body #wrapper #header .container .topsearch form .advanced-search .mini-icon:before {
+    /* Need a better icon... */
+    /*content: "Search";*/
+  }
+}
